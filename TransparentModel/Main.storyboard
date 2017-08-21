@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="193" translatesAutoresizingMaskIntoConstraints="NO" text="Parent View" minimumScaleFactor="0.5">
+                                <rect key="frame" x="116" y="47" width="143" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="203" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="147" y="319" width="81" height="30"/>
+                                <state key="normal" title="Show Detail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShowDetailAction:" destination="BYZ-38-t0r" id="1888" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="194" firstItem="193" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27"/>
+                            <constraint id="195" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="193" secondAttribute="centerX"/>
+                            <constraint id="252" firstItem="203" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="253" firstItem="203" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <scene sceneID="198">
+            <objects>
+                <viewController id="199" sceneMemberID="viewController" customClass="ModalViewController" storyboardIdentifier="DetailView">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="196"/>
+                        <viewControllerLayoutGuide type="bottom" id="197"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="200">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="1676" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="60" y="121" width="254" height="218"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="2308" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="20" y="77" width="51" height="31"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="2309" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="20" y="126" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2310" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="20" y="37" width="81" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2317" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="88" y="82" width="81" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some More Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2320" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="88" y="131" width="125" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint id="2307" firstItem="1676" firstAttribute="height" constant="218"/>
+                                    <constraint id="2311" firstItem="2310" firstAttribute="leading" secondItem="1676" secondAttribute="leading" constant="20"/>
+                                    <constraint id="2312" firstItem="2310" firstAttribute="top" secondItem="1676" secondAttribute="top" constant="37"/>
+                                    <constraint id="2313" firstItem="2310" firstAttribute="leading" secondItem="2308" secondAttribute="leading"/>
+                                    <constraint id="2314" firstItem="2309" firstAttribute="leading" secondItem="2308" secondAttribute="leading"/>
+                                    <constraint id="2315" firstItem="2308" firstAttribute="top" secondItem="2310" secondAttribute="bottom" constant="19"/>
+                                    <constraint id="2316" firstItem="2309" firstAttribute="top" secondItem="2308" secondAttribute="bottom" constant="18"/>
+                                    <constraint id="2318" firstItem="2317" firstAttribute="leading" secondItem="2308" secondAttribute="trailing" constant="19"/>
+                                    <constraint id="2319" firstItem="2317" firstAttribute="centerY" secondItem="2308" secondAttribute="centerY"/>
+                                    <constraint id="2321" firstItem="2320" firstAttribute="leading" secondItem="2317" secondAttribute="leading"/>
+                                    <constraint id="2322" firstItem="2320" firstAttribute="leading" secondItem="2309" secondAttribute="trailing" constant="19"/>
+                                    <constraint id="2325" firstItem="2320" firstAttribute="centerY" secondItem="2309" secondAttribute="centerY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <connections>
+                            <outletCollection id="1679" property="gestureRecognizers" destination="1678"/>
+                        </connections>
+                        <constraints>
+                            <constraint id="2303" firstItem="1676" firstAttribute="leading" secondItem="200" secondAttribute="leadingMargin" constant="44"/>
+                            <constraint id="2304" firstItem="200" firstAttribute="trailingMargin" secondItem="1676" secondAttribute="trailing" constant="45"/>
+                            <constraint id="2305" firstItem="1676" firstAttribute="top" secondItem="196" secondAttribute="bottom" constant="101"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CloseTabGesture" destination="1678" id="name-outlet-1678"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="201" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1678">
+                    <connections>
+                        <action selector="TapAction:" destination="199" id="1680"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="709" y="5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+</document>

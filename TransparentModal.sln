@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransparentModal", "TransparentModel\TransparentModal.csproj", "{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Release|iPhone.Build.0 = Release|iPhone
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F85BE45A-0C46-4DAE-9294-EC07AD5C36F9}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
